@@ -1,6 +1,13 @@
 
 ## Airtable formulas
 
+### Get day of week
+
+Get `Mon`, `Tue`, `Wed`...
+
+`IF({Deadline}, DATETIME_FORMAT({Deadline}, 'ddd'))`
+
+
 ### Past deadline / due date calculation
 
 ````
