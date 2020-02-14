@@ -4,9 +4,9 @@
 ### Past deadline / due date calculation
 
 ````
-IF({deadline}=BLANK(),
+IF({Deadline}=BLANK(),
     "",
-	IF(AND({status}="on track", IS_BEFORE({deadline},NOW())),
+	IF(AND({Status}="on track", IS_BEFORE({Deadline},NOW())),
         "⚠️ Past",
         "")
 )
