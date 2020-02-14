@@ -1,10 +1,12 @@
 
-## Past deadline / due date calculation
+## Airtable formulas
+
+### Past deadline / due date calculation
 
 ````
-IF({Deadline}=BLANK(),
+IF({deadline}=BLANK(),
     "",
-	IF(AND({Status}="on track", IS_BEFORE({Deadline},NOW())),
+	IF(AND({status}="on track", IS_BEFORE({deadline},NOW())),
         "⚠️ Past",
         "")
 )
